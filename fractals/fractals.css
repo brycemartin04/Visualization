@@ -1,0 +1,65 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+}
+
+.visualizations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.visualization-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.visualization-card:hover {
+    transform: scale(1.05);
+}
+
+.visualization-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.visualization-card button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+}
+
+.visualization-card button:hover {
+    background-color: #000000;
+}

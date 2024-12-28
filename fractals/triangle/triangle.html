@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierpiński's Triangle Visualizer</title>
+    <link rel="icon" href="../src/sierpinski.clear.gif" type="image/gif">
+    <link rel="stylesheet" href="triangle.css">
+</head>
+<body>
+
+    <h1>Sierpiński's Triangle Visualizer</h1>
+    <p>Below is a visualization of how the Sierpiński Triangle is formed!</p>
+
+    <div class="canvas-container">
+        <div class="canvas-wrapper">
+            <canvas id="sierpinskiCanvas"></canvas>
+        </div>
+    </div>
+
+    <div class="description">
+        <p>This fractal is formed by following a very simple set of rules!</p>
+        <p>1. Choose any random point inside the base triangle.</p>
+        <p>2. Draw a line from that point to a random vertex.</p>
+        <p>3. Plot a point at the midpoint of that line that was just created.</p>
+        <p>4. Infinitely repeat steps 2-3 using the midpoint as your new starting point.</p>
+        <a href="../../index.html" class="back-btn">Back to Home</a>
+    </div>
+    
+    <script src="triangle.js"></script>
+    
+</body>
+</html>

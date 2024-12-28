@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Renderer</title>
+    <link rel="icon" href="../src/sierpinski.clear.gif" type="image/gif">
+    <link rel="stylesheet" href="3drenderer.css">
+</head>
+<body>
+
+    <h1>3D Renderer</h1>
+    <p>Below is a simple 3D Renderer</p>
+    <div class="controls">
+        <button id="cube">Cube</button>
+        <button id="pyramid">Pyramid</button>
+        <button id="dodecahedron">Dodecahedron</button>
+        <button id="pentagrammic">Pentagrammic Prizm</button>
+        <button id="human">Human</button>
+        <button id="car">Car</button>
+        <input type="file" id="fileInput" accept=".obj" style="display: none;" />
+        <label for="fileInput" class="back-btn">Upload .obj File</label>
+        <button id="clear">Clear</button>
+        <div class="increment-container">
+            <div class="increment-sub-container">
+                <button class = "increment-btn" id="lineMinus">-</button>
+                <span class="increment-label" id = "lineValue">Line Width: 5</span>
+                <button class = "increment-btn" id="linePlus">+</button>
+            </div>
+            <div class="increment-sub-container">
+                <button class = "increment-btn" id="scaleMinus" >-</button>
+                <span class="increment-label" id = "scaleValue">Scale: 180</span>
+                <button class = "increment-btn" id="scalePlus">+</button>
+            </div>
+        </div>
+        <label>
+            <input type="checkbox" id="autoRotate" checked>
+            Auto Rotation
+          </label>
+        </div>
+    </div>
+    <div class="canvas-container">
+        <div class="canvas-wrapper">
+            <canvas id="3drendererCanvas"></canvas>
+        </div>
+    </div>
+
+    <div class="description">
+        <a href="../index.html" class="back-btn">Back to Home</a>
+    </div>
+    <script src="Point3D.js"></script>
+    <script src="Point2D.js"></script>
+    <script src="Edge.js"></script>
+    <script src="3drenderer.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Visualizer</title>
+    <link rel="icon" href="../src/sierpinski.clear.gif" type="image/gif">
+    <link rel="stylesheet" href="graph.css">
+</head>
+<body>
+
+    <h1>Graph Visualizer</h1>
+    <p>Below is a visualization of many different interesting graphs!</p>
+    
+    <div class="controls">
+        <button id="sinCosEquation">Sinusoidal Function</button>
+        <button id="sinTanEquation">Hourglass</button>
+        <button id="xSquaredEquation">Epicycloid</button>
+        <button id="astroid">Archimedean Spiral</button>
+        <button id="pi">Golden Ratio</button>
+        <button id="clear">Clear</button>
+    </div>
+
+    <div class="canvas-container">
+        <div class="canvas-wrapper">
+            <canvas id="graphCanvas"></canvas>
+        </div>
+    </div>
+
+    <div class="description">
+        <a href="../index.html" class="back-btn">Back to Home</a>
+    </div>
+    
+    <script src="graph.js"></script>
+    
+</body>
+</html>

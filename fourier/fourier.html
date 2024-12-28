@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourier Series Visualizer</title>
+    <link rel="icon" href="../src/sierpinski.clear.gif" type="image/gif">
+    <link rel="stylesheet" href="fourier.css">
+</head>
+<body>
+
+    <h1>Fourier Series Visualizer</h1>
+    <p>Below is a visualization of how the Fourier Series is formed!</p>
+    <div class="slider-container">
+        <div class="slider-sub-container">
+        <span class="slider-label">Iterations</span>
+        <input type="range" min="0" max="15" value="5" class="slider" id="iterations">
+        <span id="iterationsValue" class="slider-value">5</span>
+        </div>
+    </div>
+    <div class="canvas-container">
+        <div class="canvas-wrapper">
+            <canvas id="fourierCanvas"></canvas>
+        </div>
+    </div>
+    <div class="description">
+        <a href="../index.html" class="back-btn">Back to Home</a>
+    </div>
+
+    
+    
+    <script src="fourier.js"></script>
+    
+</body>
+</html>
